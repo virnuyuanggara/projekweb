@@ -146,3 +146,27 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+
+/* Media query untuk layar smartphone */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card .price {
+    font-size: 1rem;
+  }
+}
