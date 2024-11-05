@@ -1,0 +1,148 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('images/background.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+  background-size: cover; /* Mengatur agar gambar menutupi seluruh latar belakang */
+  background-position: center; /* Mengatur posisi gambar di tengah */
+  color: #333;
+}
+
+
+/* Header */
+header {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 4rem 0; /* Tambah padding atas dan bawah */
+  position: relative;
+}
+
+header h1 {
+  font-size: 3.5rem; /* Ukuran font lebih besar */
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan pada teks */
+}
+
+header p {
+  font-size: 1.5rem; /* Ukuran font lebih besar */
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.5; /* Menambah jarak antar baris */
+}
+
+
+/* Section Umum */
+section {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+section h2 {
+  color: #6a1b9a; /* Mengubah warna judul menjadi kuning cerah */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* About Section */
+.about p {
+  line-height: 1.5;
+  color: #555;
+  text-align: center; /* Menengahkan teks */
+}
+
+/* Catalog Section */
+.catalog {
+  margin-top: 1rem;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.card .price {
+  font-size: 1.2rem;
+  color: #e91e63; /* Warna merah muda untuk harga */
+  text-align: center;
+}
+
+.card .description {
+  font-size: 0.9rem;
+  padding: 0 1rem 1rem;
+  text-align: center;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 1rem;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact a {
+  color: #6a1b9a; /* Mengubah warna link menjadi ungu tua */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
